@@ -11,4 +11,6 @@
 
 #import "UIView+SGExtension.h"
 
+#define SGScreenW [UIScreen mainScreen].bounds.size.width
+#define SGScreenH [UIScreen mainScreen].bounds.size.height
 #endif /* PrefixHeader_pch */

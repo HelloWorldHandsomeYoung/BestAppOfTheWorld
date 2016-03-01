@@ -17,13 +17,18 @@
 		76B3F1131C852EA300683D78 /* SGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1121C852EA300683D78 /* SGNavigationController.m */; };
 		76B3F1161C852F9500683D78 /* UIView+SGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1151C852F9500683D78 /* UIView+SGExtension.m */; };
 		76B3F11D1C8540E300683D78 /* SGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F11C1C8540E300683D78 /* SGTabBar.m */; };
-		76B3F1201C85437900683D78 /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F11F1C85437900683D78 /* HomePageController.m */; };
 		76B3F1231C85438D00683D78 /* MeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1221C85438D00683D78 /* MeController.m */; };
 		76B3F1271C8543AC00683D78 /* HomePageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1251C8543AC00683D78 /* HomePageViewCell.m */; };
 		76B3F1281C8543AC00683D78 /* HomePageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B3F1261C8543AC00683D78 /* HomePageViewCell.xib */; };
 		76B3F12B1C8569CF00683D78 /* HomePageModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F12A1C8569CF00683D78 /* HomePageModels.m */; };
 		76B3F12E1C8569DD00683D78 /* MeModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F12D1C8569DD00683D78 /* MeModels.m */; };
 		76B3F1311C8569ED00683D78 /* MeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1301C8569ED00683D78 /* MeViewCell.m */; };
+		76B3F1391C857A5B00683D78 /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1381C857A5B00683D78 /* HomePageController.m */; };
+		76B3F13C1C857D7A00683D78 /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F13B1C857D7A00683D78 /* NearViewController.m */; };
+		76B3F13F1C857D8F00683D78 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F13E1C857D8F00683D78 /* NewViewController.m */; };
+		76B3F1431C857DD000683D78 /* NearViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1411C857DD000683D78 /* NearViewCell.m */; };
+		76B3F1441C857DD000683D78 /* NearViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B3F1421C857DD000683D78 /* NearViewCell.xib */; };
+		76B3F1471C857ED200683D78 /* HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1461C857ED200683D78 /* HotViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +50,6 @@
 		76B3F1151C852F9500683D78 /* UIView+SGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SGExtension.m"; sourceTree = "<group>"; };
 		76B3F11B1C8540E300683D78 /* SGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTabBar.h; sourceTree = "<group>"; };
 		76B3F11C1C8540E300683D78 /* SGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTabBar.m; sourceTree = "<group>"; };
-		76B3F11E1C85437900683D78 /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
-		76B3F11F1C85437900683D78 /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
 		76B3F1211C85438D00683D78 /* MeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeController.h; sourceTree = "<group>"; };
 		76B3F1221C85438D00683D78 /* MeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeController.m; sourceTree = "<group>"; };
 		76B3F1241C8543AC00683D78 /* HomePageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewCell.h; sourceTree = "<group>"; };
@@ -59,6 +62,17 @@
 		76B3F12F1C8569ED00683D78 /* MeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewCell.h; sourceTree = "<group>"; };
 		76B3F1301C8569ED00683D78 /* MeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewCell.m; sourceTree = "<group>"; };
 		76B3F1361C85725000683D78 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		76B3F1371C857A5B00683D78 /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
+		76B3F1381C857A5B00683D78 /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
+		76B3F13A1C857D7A00683D78 /* NearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewController.h; sourceTree = "<group>"; };
+		76B3F13B1C857D7A00683D78 /* NearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewController.m; sourceTree = "<group>"; };
+		76B3F13D1C857D8F00683D78 /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		76B3F13E1C857D8F00683D78 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
+		76B3F1401C857DD000683D78 /* NearViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewCell.h; sourceTree = "<group>"; };
+		76B3F1411C857DD000683D78 /* NearViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewCell.m; sourceTree = "<group>"; };
+		76B3F1421C857DD000683D78 /* NearViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearViewCell.xib; sourceTree = "<group>"; };
+		76B3F1451C857ED200683D78 /* HotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewController.h; sourceTree = "<group>"; };
+		76B3F1461C857ED200683D78 /* HotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +147,14 @@
 		76B3F0FD1C852A8B00683D78 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				76B3F11E1C85437900683D78 /* HomePageController.h */,
-				76B3F11F1C85437900683D78 /* HomePageController.m */,
+				76B3F1371C857A5B00683D78 /* HomePageController.h */,
+				76B3F1381C857A5B00683D78 /* HomePageController.m */,
+				76B3F1451C857ED200683D78 /* HotViewController.h */,
+				76B3F1461C857ED200683D78 /* HotViewController.m */,
+				76B3F13A1C857D7A00683D78 /* NearViewController.h */,
+				76B3F13B1C857D7A00683D78 /* NearViewController.m */,
+				76B3F13D1C857D8F00683D78 /* NewViewController.h */,
+				76B3F13E1C857D8F00683D78 /* NewViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +174,9 @@
 				76B3F1241C8543AC00683D78 /* HomePageViewCell.h */,
 				76B3F1251C8543AC00683D78 /* HomePageViewCell.m */,
 				76B3F1261C8543AC00683D78 /* HomePageViewCell.xib */,
+				76B3F1401C857DD000683D78 /* NearViewCell.h */,
+				76B3F1411C857DD000683D78 /* NearViewCell.m */,
+				76B3F1421C857DD000683D78 /* NearViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76B3F0ED1C84222400683D78 /* LaunchScreen.storyboard in Resources */,
+				76B3F1441C857DD000683D78 /* NearViewCell.xib in Resources */,
 				76B3F0EA1C84222400683D78 /* Assets.xcassets in Resources */,
 				76B3F1281C8543AC00683D78 /* HomePageViewCell.xib in Resources */,
 				76B3F0E81C84222400683D78 /* Main.storyboard in Resources */,
@@ -310,17 +334,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B3F13C1C857D7A00683D78 /* NearViewController.m in Sources */,
 				76B3F11D1C8540E300683D78 /* SGTabBar.m in Sources */,
-				76B3F1201C85437900683D78 /* HomePageController.m in Sources */,
+				76B3F1471C857ED200683D78 /* HotViewController.m in Sources */,
 				76B3F10D1C852A8B00683D78 /* ViewController.m in Sources */,
+				76B3F1391C857A5B00683D78 /* HomePageController.m in Sources */,
 				76B3F12E1C8569DD00683D78 /* MeModels.m in Sources */,
 				76B3F1131C852EA300683D78 /* SGNavigationController.m in Sources */,
 				76B3F1231C85438D00683D78 /* MeController.m in Sources */,
 				76B3F12B1C8569CF00683D78 /* HomePageModels.m in Sources */,
 				76B3F10C1C852A8B00683D78 /* AppDelegate.m in Sources */,
 				76B3F1311C8569ED00683D78 /* MeViewCell.m in Sources */,
+				76B3F1431C857DD000683D78 /* NearViewCell.m in Sources */,
 				76B3F1101C852B3400683D78 /* SGViewController.m in Sources */,
 				76B3F1161C852F9500683D78 /* UIView+SGExtension.m in Sources */,
+				76B3F13F1C857D8F00683D78 /* NewViewController.m in Sources */,
 				76B3F1271C8543AC00683D78 /* HomePageViewCell.m in Sources */,
 				76B3F0DF1C84222400683D78 /* main.m in Sources */,
 			);

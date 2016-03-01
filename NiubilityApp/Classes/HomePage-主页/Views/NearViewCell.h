@@ -1,5 +1,5 @@
 //
-//  HomePageController.h
+//  NearViewCell.h
 //  NiubilityApp
 //
 //  Created by 吕阳 on 16/3/1.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomePageController : UIViewController
+@interface NearViewCell : UITableViewCell
 
 @end
