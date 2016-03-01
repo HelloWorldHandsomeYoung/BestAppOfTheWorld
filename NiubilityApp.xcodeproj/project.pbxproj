@@ -29,6 +29,8 @@
 		76B3F1431C857DD000683D78 /* NearViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1411C857DD000683D78 /* NearViewCell.m */; };
 		76B3F1441C857DD000683D78 /* NearViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B3F1421C857DD000683D78 /* NearViewCell.xib */; };
 		76B3F1471C857ED200683D78 /* HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1461C857ED200683D78 /* HotViewController.m */; };
+		A5D94A361C858A3A0008D595 /* SGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D94A341C858A3A0008D595 /* SGMainViewController.m */; };
+		A5D94A371C858A3A0008D595 /* SGMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D94A351C858A3A0008D595 /* SGMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,9 @@
 		76B3F1421C857DD000683D78 /* NearViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearViewCell.xib; sourceTree = "<group>"; };
 		76B3F1451C857ED200683D78 /* HotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewController.h; sourceTree = "<group>"; };
 		76B3F1461C857ED200683D78 /* HotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewController.m; sourceTree = "<group>"; };
+		A5D94A331C858A3A0008D595 /* SGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMainViewController.h; sourceTree = "<group>"; };
+		A5D94A341C858A3A0008D595 /* SGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMainViewController.m; sourceTree = "<group>"; };
+		A5D94A351C858A3A0008D595 /* SGMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +253,9 @@
 				76B3F10F1C852B3400683D78 /* SGViewController.m */,
 				76B3F1111C852EA300683D78 /* SGNavigationController.h */,
 				76B3F1121C852EA300683D78 /* SGNavigationController.m */,
+				A5D94A331C858A3A0008D595 /* SGMainViewController.h */,
+				A5D94A341C858A3A0008D595 /* SGMainViewController.m */,
+				A5D94A351C858A3A0008D595 /* SGMainViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -324,6 +332,7 @@
 				76B3F0EA1C84222400683D78 /* Assets.xcassets in Resources */,
 				76B3F1281C8543AC00683D78 /* HomePageViewCell.xib in Resources */,
 				76B3F0E81C84222400683D78 /* Main.storyboard in Resources */,
+				A5D94A371C858A3A0008D595 /* SGMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +348,7 @@
 				76B3F1471C857ED200683D78 /* HotViewController.m in Sources */,
 				76B3F10D1C852A8B00683D78 /* ViewController.m in Sources */,
 				76B3F1391C857A5B00683D78 /* HomePageController.m in Sources */,
+				A5D94A361C858A3A0008D595 /* SGMainViewController.m in Sources */,
 				76B3F12E1C8569DD00683D78 /* MeModels.m in Sources */,
 				76B3F1131C852EA300683D78 /* SGNavigationController.m in Sources */,
 				76B3F1231C85438D00683D78 /* MeController.m in Sources */,
