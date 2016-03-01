@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		695E76A01C85D6020017D4F5 /* SGRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695E769F1C85D6020017D4F5 /* SGRegisterViewController.m */; };
+		695E76A31C85D6260017D4F5 /* SGRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 695E76A21C85D6260017D4F5 /* SGRegisterView.m */; };
 		76B3F0DF1C84222400683D78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F0DE1C84222400683D78 /* main.m */; };
 		76B3F0E81C84222400683D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B3F0E61C84222400683D78 /* Main.storyboard */; };
 		76B3F0EA1C84222400683D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B3F0E91C84222400683D78 /* Assets.xcassets */; };
@@ -36,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		695E769E1C85D6020017D4F5 /* SGRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRegisterViewController.h; sourceTree = "<group>"; };
+		695E769F1C85D6020017D4F5 /* SGRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGRegisterViewController.m; sourceTree = "<group>"; };
+		695E76A11C85D6260017D4F5 /* SGRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRegisterView.h; sourceTree = "<group>"; };
+		695E76A21C85D6260017D4F5 /* SGRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGRegisterView.m; sourceTree = "<group>"; };
 		76B3F0DA1C84222400683D78 /* NiubilityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiubilityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B3F0DE1C84222400683D78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76B3F0E71C84222400683D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -254,6 +260,8 @@
 		76B3F1081C852A8B00683D78 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				695E769E1C85D6020017D4F5 /* SGRegisterViewController.h */,
+				695E769F1C85D6020017D4F5 /* SGRegisterViewController.m */,
 				76B3F10E1C852B3400683D78 /* SGViewController.h */,
 				76B3F10F1C852B3400683D78 /* SGViewController.m */,
 				76B3F1111C852EA300683D78 /* SGNavigationController.h */,
@@ -273,6 +281,8 @@
 			children = (
 				76B3F11B1C8540E300683D78 /* SGTabBar.h */,
 				76B3F11C1C8540E300683D78 /* SGTabBar.m */,
+				695E76A11C85D6260017D4F5 /* SGRegisterView.h */,
+				695E76A21C85D6260017D4F5 /* SGRegisterView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -358,6 +368,7 @@
 				76B3F10D1C852A8B00683D78 /* ViewController.m in Sources */,
 				76B3F1391C857A5B00683D78 /* HomePageController.m in Sources */,
 				A5D94A361C858A3A0008D595 /* SGMainViewController.m in Sources */,
+				695E76A31C85D6260017D4F5 /* SGRegisterView.m in Sources */,
 				A5D94A3B1C8595710008D595 /* SGLoginViewController.m in Sources */,
 				76B3F12E1C8569DD00683D78 /* MeModels.m in Sources */,
 				76B3F1131C852EA300683D78 /* SGNavigationController.m in Sources */,
@@ -371,6 +382,7 @@
 				76B3F13F1C857D8F00683D78 /* NewViewController.m in Sources */,
 				76B3F1271C8543AC00683D78 /* HomePageViewCell.m in Sources */,
 				76B3F0DF1C84222400683D78 /* main.m in Sources */,
+				695E76A01C85D6020017D4F5 /* SGRegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
