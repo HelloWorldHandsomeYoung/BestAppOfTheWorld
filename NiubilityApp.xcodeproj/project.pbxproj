@@ -43,7 +43,6 @@
 		76B3F1121C852EA300683D78 /* SGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGNavigationController.m; sourceTree = "<group>"; };
 		76B3F1141C852F9500683D78 /* UIView+SGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SGExtension.h"; sourceTree = "<group>"; };
 		76B3F1151C852F9500683D78 /* UIView+SGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SGExtension.m"; sourceTree = "<group>"; };
-		76B3F11A1C85311200683D78 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		76B3F11B1C8540E300683D78 /* SGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTabBar.h; sourceTree = "<group>"; };
 		76B3F11C1C8540E300683D78 /* SGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTabBar.m; sourceTree = "<group>"; };
 		76B3F11E1C85437900683D78 /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		76B3F12D1C8569DD00683D78 /* MeModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeModels.m; sourceTree = "<group>"; };
 		76B3F12F1C8569ED00683D78 /* MeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewCell.h; sourceTree = "<group>"; };
 		76B3F1301C8569ED00683D78 /* MeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewCell.m; sourceTree = "<group>"; };
+		76B3F1361C85725000683D78 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +75,7 @@
 		76B3F0D11C84222400683D78 = {
 			isa = PBXGroup;
 			children = (
+				76B3F1361C85725000683D78 /* PrefixHeader.pch */,
 				76B3F0DC1C84222400683D78 /* NiubilityApp */,
 				76B3F0DB1C84222400683D78 /* Products */,
 			);
@@ -204,7 +205,6 @@
 				76B3F1061C852A8B00683D78 /* AppDelegate.m */,
 				76B3F1091C852A8B00683D78 /* ViewController.h */,
 				76B3F10A1C852A8B00683D78 /* ViewController.m */,
-				76B3F11A1C85311200683D78 /* PrefixHeader.pch */,
 			);
 			path = "Other-其他";
 			sourceTree = "<group>";
@@ -433,7 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/Luckyang/Desktop/BestAppOfTheWorld/NiubilityApp/Classes/Other-其他/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = NiubilityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LY.NiubilityApp;
@@ -446,7 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/Luckyang/Desktop/BestAppOfTheWorld/NiubilityApp/Classes/Other-其他/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = NiubilityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LY.NiubilityApp;

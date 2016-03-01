@@ -39,7 +39,8 @@ static  NSString *cellID = @"HomeCell";
 - (void)test
 {
     [UIView animateWithDuration:1 animations:^{
-        self.navigationController.navigationBar.frame = CGRectMake(0, -64, [UIScreen mainScreen].bounds.size.width, 64);
+        self.navigationController.navigationBar.hidden = YES;
+        self.tabBarController.tabBar.hidden = YES;
     }];
 }
 - (void)didReceiveMemoryWarning {
