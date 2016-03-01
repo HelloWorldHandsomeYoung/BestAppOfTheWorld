@@ -8,6 +8,7 @@
 
 #import "SGMainViewController.h"
 #import "SGLoginViewController.h"
+#import "SGRegisterViewController.h"
 
 @interface SGMainViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
@@ -41,6 +42,9 @@
 
 #pragma mark - 注册响应方法
 - (IBAction)registerAction:(UIButton *)sender {
+    SGRegisterViewController *rvc = [[SGRegisterViewController alloc]init];
+    
+    [self.navigationController pushViewController:rvc animated:YES];
 }
 
 #pragma mark - 登录响应方法
