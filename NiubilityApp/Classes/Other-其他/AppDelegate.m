@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SGViewController.h"
+#import "SGRegisterViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,6 +21,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[SGViewController alloc]init];
+//    self.window.rootViewController = [[SGRegisterViewController alloc]init];
     return YES;
 }
 
