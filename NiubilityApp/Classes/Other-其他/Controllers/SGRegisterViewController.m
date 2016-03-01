@@ -53,6 +53,8 @@
     [self.sgrv.phoneNum becomeFirstResponder];
     self.sgrv.button.userInteractionEnabled = NO;
     self.sgrv.button.alpha = 0.4;
+    self.navigationController.navigationBarHidden = NO;
+
 }
 
 
