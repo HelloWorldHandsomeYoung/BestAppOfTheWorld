@@ -10,5 +10,4 @@
 #import "SGRegisterView.h"
 @interface SGRegisterViewController : UIViewController
 @property(nonatomic,strong)SGRegisterView *sgrv;
-
 @end
