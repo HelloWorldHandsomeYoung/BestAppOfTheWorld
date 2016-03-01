@@ -21,6 +21,9 @@
 		76B3F1231C85438D00683D78 /* MeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1221C85438D00683D78 /* MeController.m */; };
 		76B3F1271C8543AC00683D78 /* HomePageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1251C8543AC00683D78 /* HomePageViewCell.m */; };
 		76B3F1281C8543AC00683D78 /* HomePageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B3F1261C8543AC00683D78 /* HomePageViewCell.xib */; };
+		76B3F12B1C8569CF00683D78 /* HomePageModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F12A1C8569CF00683D78 /* HomePageModels.m */; };
+		76B3F12E1C8569DD00683D78 /* MeModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F12D1C8569DD00683D78 /* MeModels.m */; };
+		76B3F1311C8569ED00683D78 /* MeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1301C8569ED00683D78 /* MeViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,12 @@
 		76B3F1241C8543AC00683D78 /* HomePageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewCell.h; sourceTree = "<group>"; };
 		76B3F1251C8543AC00683D78 /* HomePageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewCell.m; sourceTree = "<group>"; };
 		76B3F1261C8543AC00683D78 /* HomePageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewCell.xib; sourceTree = "<group>"; };
+		76B3F1291C8569CF00683D78 /* HomePageModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModels.h; sourceTree = "<group>"; };
+		76B3F12A1C8569CF00683D78 /* HomePageModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageModels.m; sourceTree = "<group>"; };
+		76B3F12C1C8569DD00683D78 /* MeModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeModels.h; sourceTree = "<group>"; };
+		76B3F12D1C8569DD00683D78 /* MeModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeModels.m; sourceTree = "<group>"; };
+		76B3F12F1C8569ED00683D78 /* MeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewCell.h; sourceTree = "<group>"; };
+		76B3F1301C8569ED00683D78 /* MeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +141,8 @@
 		76B3F0FE1C852A8B00683D78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				76B3F1291C8569CF00683D78 /* HomePageModels.h */,
+				76B3F12A1C8569CF00683D78 /* HomePageModels.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +179,8 @@
 		76B3F1021C852A8B00683D78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				76B3F12C1C8569DD00683D78 /* MeModels.h */,
+				76B3F12D1C8569DD00683D78 /* MeModels.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +188,8 @@
 		76B3F1031C852A8B00683D78 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				76B3F12F1C8569ED00683D78 /* MeViewCell.h */,
+				76B3F1301C8569ED00683D78 /* MeViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,9 +313,12 @@
 				76B3F11D1C8540E300683D78 /* SGTabBar.m in Sources */,
 				76B3F1201C85437900683D78 /* HomePageController.m in Sources */,
 				76B3F10D1C852A8B00683D78 /* ViewController.m in Sources */,
+				76B3F12E1C8569DD00683D78 /* MeModels.m in Sources */,
 				76B3F1131C852EA300683D78 /* SGNavigationController.m in Sources */,
 				76B3F1231C85438D00683D78 /* MeController.m in Sources */,
+				76B3F12B1C8569CF00683D78 /* HomePageModels.m in Sources */,
 				76B3F10C1C852A8B00683D78 /* AppDelegate.m in Sources */,
+				76B3F1311C8569ED00683D78 /* MeViewCell.m in Sources */,
 				76B3F1101C852B3400683D78 /* SGViewController.m in Sources */,
 				76B3F1161C852F9500683D78 /* UIView+SGExtension.m in Sources */,
 				76B3F1271C8543AC00683D78 /* HomePageViewCell.m in Sources */,
