@@ -1,18 +1,17 @@
 //
-//  HomePageViewCell.m
+//  NearViewCell.m
 //  NiubilityApp
 //
 //  Created by 吕阳 on 16/3/1.
 //  Copyright © 2016年 DeveloperYoung. All rights reserved.
 //
 
-#import "HomePageViewCell.h"
+#import "NearViewCell.h"
 
-@implementation HomePageViewCell
+@implementation NearViewCell
 
 - (void)awakeFromNib {
     // Initialization code
-    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

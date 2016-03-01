@@ -9,6 +9,26 @@
 #import "UIView+SGExtension.h"
 
 @implementation UIView (SGExtension)
+
+- (void)setMasksToBoundsWH:(BOOL)masksToBoundsWH {
+
+    self.layer.masksToBounds = masksToBoundsWH;
+
+}
+
+- (BOOL)masksToBoundsWH {
+    return self.layer.masksToBounds;
+}
+
+- (void)setCornerRadiusWH:(CGFloat)cornerRadiusWH {
+
+    self.layer.cornerRadius = cornerRadiusWH;
+}
+
+- (CGFloat)cornerRadiusWH {
+    return self.layer.cornerRadius;
+}
+
 - (void)setWidth:(CGFloat)width
 {
     CGRect frame = self.frame;
@@ -88,4 +108,5 @@
 {
     return self.frame.origin.y;
 }
+
 @end
