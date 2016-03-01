@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGMainViewController">
             <connections>
+                <outlet property="loginButton" destination="p8V-sj-Pm9" id="Ii7-B4-aef"/>
+                <outlet property="registerButton" destination="lfW-lC-cf5" id="GJI-Kl-Vag"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +16,47 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0W9-mR-Wnk">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfW-lC-cf5">
+                    <rect key="frame" x="10" y="498" width="145" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.85463910448031766" blue="0.18338470766394177" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KzA-U0-Kuo"/>
+                    </constraints>
+                    <state key="normal" title="注册"/>
+                    <connections>
+                        <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="nVx-Wz-kOh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8V-sj-Pm9">
+                    <rect key="frame" x="165" y="498" width="145" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="BHb-xr-PIf"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0W9-mR-Wnk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1F6-6f-OyL"/>
+                <constraint firstItem="p8V-sj-Pm9" firstAttribute="width" secondItem="lfW-lC-cf5" secondAttribute="width" id="2RN-1L-DJh"/>
+                <constraint firstAttribute="bottom" secondItem="lfW-lC-cf5" secondAttribute="bottom" constant="20" id="4b5-2U-FuR"/>
+                <constraint firstItem="0W9-mR-Wnk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8GF-un-TgP"/>
+                <constraint firstItem="lfW-lC-cf5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="8Hg-sf-o06"/>
+                <constraint firstAttribute="bottom" secondItem="0W9-mR-Wnk" secondAttribute="bottom" id="DvF-l3-7dl"/>
+                <constraint firstAttribute="trailing" secondItem="0W9-mR-Wnk" secondAttribute="trailing" id="Hli-8U-VgW"/>
+                <constraint firstAttribute="bottom" secondItem="p8V-sj-Pm9" secondAttribute="bottom" constant="20" id="HvT-Fe-J3o"/>
+                <constraint firstAttribute="trailing" secondItem="p8V-sj-Pm9" secondAttribute="trailing" constant="10" id="RvG-dO-3du"/>
+                <constraint firstItem="p8V-sj-Pm9" firstAttribute="height" secondItem="lfW-lC-cf5" secondAttribute="height" id="dHc-J9-Xoe"/>
+                <constraint firstItem="p8V-sj-Pm9" firstAttribute="leading" secondItem="lfW-lC-cf5" secondAttribute="trailing" constant="10" id="kiw-9F-e6U"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>

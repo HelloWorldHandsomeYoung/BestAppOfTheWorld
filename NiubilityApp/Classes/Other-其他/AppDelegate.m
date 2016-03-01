@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "SGViewController.h"
+#import "SGMainViewController.h"
+#import "SGNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,7 +21,9 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    self.window.rootViewController = [[SGViewController alloc]init];
+    SGNavigationController *nvc = [[SGNavigationController alloc] initWithRootViewController:[[SGMainViewController alloc]init]];
+
+    self.window.rootViewController =nvc;
     return YES;
 }
 

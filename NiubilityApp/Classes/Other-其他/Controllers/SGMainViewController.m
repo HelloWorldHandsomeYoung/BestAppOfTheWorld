@@ -7,8 +7,11 @@
 //
 
 #import "SGMainViewController.h"
+#import "SGLoginViewController.h"
 
 @interface SGMainViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end
 
@@ -16,7 +19,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+
+    
+    [self changeButtonCornerRadius];
+    
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBarHidden = YES;
+}
+
+#pragma mark - 改变button圆角
+- (void)changeButtonCornerRadius {
+    self.registerButton.layer.masksToBounds = YES;
+    self.registerButton.layer.cornerRadius = 5;
+    self.loginButton.layer.masksToBounds = YES;
+    self.loginButton.layer.cornerRadius = 5;
+}
+
+#pragma mark - 注册响应方法
+- (IBAction)registerAction:(UIButton *)sender {
+}
+
+#pragma mark - 登录响应方法
+- (IBAction)loginAction:(UIButton *)sender {
+//    UINavigationController *smvc = [[UINavigationController alloc] init];
+    SGLoginViewController *nvc = [[SGLoginViewController alloc] init];
+
+    [self.navigationController pushViewController:nvc animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning {
