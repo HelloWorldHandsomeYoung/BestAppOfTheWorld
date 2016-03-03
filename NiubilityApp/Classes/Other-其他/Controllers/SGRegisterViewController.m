@@ -27,10 +27,33 @@
     
     [self.sgrv.button addTarget:self action:@selector(registerAction:) forControlEvents:UIControlEventTouchUpInside];
     
+    [self.sgrv.rightButton addTarget:self action:@selector(sendMessageAction:) forControlEvents:UIControlEventTouchUpInside];
+    
     self.navigationItem.title = @"填写手机号";
     self.navigationController.navigationBar.backgroundColor = [UIColor yellowColor];
     //实现textField输入改变button状态
     [self.sgrv.phoneNum addTarget:self action:@selector(textFieldChanged:) forControlEvents:UIControlEventEditingChanged];
+}
+//发送短信按钮响应事件
+- (void)sendMessageAction:(UIButton *)sender
+{
+    sender.selected = YES;
+    [sender setTitleColor:[UIColor lightGrayColor] forState:UIControlStateSelected];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(countDown:) userInfo:nil repeats:YES];
+}
+- (void)countDown:(NSTimer *)sender
+{
+    self.sgrv.rightButton.userInteractionEnabled = NO;
+    [self.sgrv.rightButton setTitle:[NSString stringWithFormat:@"%ld s", self.sgrv.rightButton.tag] forState:UIControlStateSelected];
+    self.sgrv.rightButton.tag--;
+    if (self.sgrv.rightButton.tag == -1) {
+        self.sgrv.rightButton.selected = NO;
+        [sender invalidate];
+        [self.sgrv.rightButton setTitle:@"60 s" forState:UIControlStateSelected];
+        [self.sgrv.rightButton setTitle:@"发送" forState:UIControlStateNormal];
+        self.sgrv.rightButton.userInteractionEnabled = YES;
+        self.sgrv.rightButton.tag = 60;
+    }
 }
 
 - (void)textFieldChanged:(UITextField *)sender
@@ -46,7 +69,21 @@
 }
 - (void)registerAction:(UIButton *)sender
 {
-    NSLog(@"1");
+    UIView *view = [[UIView alloc]init];
+    view.width = 80;
+    view.height = 30;
+    view.center = CGPointMake(self.view.centerX, 220);
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, view.width, view.height)];
+    label.text = @"注册成功";
+    label.textColor = [UIColor grayColor];
+    label.font = [UIFont systemFontOfSize:14];
+    [view addSubview:label];
+    
+    [self.view addSubview:view];
+    [UIView animateWithDuration:1 animations:^{
+        view.alpha = 0;
+    }];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{

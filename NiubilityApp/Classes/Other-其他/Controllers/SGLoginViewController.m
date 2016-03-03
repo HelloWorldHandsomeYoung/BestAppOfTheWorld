@@ -8,6 +8,7 @@
 
 #import "SGLoginViewController.h"
 #import "SGViewController.h"
+#import "UserManager.h"
 
 @interface SGLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumField;
@@ -50,7 +51,26 @@
 #pragma mark - 登录响应事件
 #pragma mark 手机号登录响应事件
 - (IBAction)loginAction:(UIButton *)sender {
-    
+    AVObject *user = [[UserManager shareInstance]userLoginWithUserName:self.phoneNumField.text PassWord:self.passwardField.text];
+    if (user != NULL) {
+        [self.navigationController presentViewController:[[SGViewController alloc]init] animated:YES completion:nil];
+    }else
+    {
+        UIView *view = [[UIView alloc]init];
+        view.width = 120;
+        view.height = 30;
+        view.center = CGPointMake(self.view.centerX, 130);
+        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, view.width, view.height)];
+        label.text = @"账号密码错误！";
+        label.textColor = [UIColor grayColor];
+        label.font = [UIFont systemFontOfSize:15];
+        [view addSubview:label];
+        
+        [self.view addSubview:view];
+        [UIView animateWithDuration:1 animations:^{
+            view.alpha = 0;
+        }];;
+    }
 }
 
 #pragma mark QQ登录响应事件

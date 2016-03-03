@@ -21,6 +21,10 @@
 #import "WXApi.h"
 //新浪微博SDK头文件
 #import "WeiboSDK.h"
+
+#import "UserManager.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -30,7 +34,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [self thirdLogin];
     
+    [self leanCloudInfo];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -39,8 +45,29 @@
 
     self.window.rootViewController = nvc;
     
-    [nvc pushViewController:[[SGViewController alloc]init] animated:YES];
+//    [nvc pushViewController:[[SGViewController alloc]init] animated:YES];
     
+//    AVObject * user = [[UserManager shareInstance]userRegisterWithUserName:@"1" PassWord:@"1" Gender:@"man" NickName:@"a"];
+//    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//        if (succeeded) {
+//            NSLog(@"1");
+//        }
+//    }];
+    
+    
+    return YES;
+}
+#pragma mark - LeanCloud 配置
+- (void)leanCloudInfo
+{
+    // applicationId 即 App Id，clientKey 是 App Key。
+    [AVOSCloud setApplicationId:@"DvA9uJXUwBf2CMAAsaw8kUsQ-gzGzoHsz"
+                      clientKey:@"wXBe53WFmxWujK1nywefRtpD"];
+}
+#pragma mark - 第三方登录配置
+- (void)thirdLogin
+{
+    //ShareSDK 第三方登录 配置
     NSArray *platform = @[@(SSDKPlatformTypeSinaWeibo), @(SSDKPlatformTypeQQ), @(SSDKPlatformTypeWechat)];
     
     [ShareSDK registerApp:@"Niubility" activePlatforms:platform onImport:^(SSDKPlatformType platformType) {
@@ -72,9 +99,7 @@
                 break;
         }
     }];
-    return YES;
 }
-
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
