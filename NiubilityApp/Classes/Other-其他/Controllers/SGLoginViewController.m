@@ -7,6 +7,7 @@
 //
 
 #import "SGLoginViewController.h"
+#import "SGViewController.h"
 
 @interface SGLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumField;
@@ -49,14 +50,59 @@
 #pragma mark - 登录响应事件
 #pragma mark 手机号登录响应事件
 - (IBAction)loginAction:(UIButton *)sender {
+    
 }
 
 #pragma mark QQ登录响应事件
 - (IBAction)loginByQQ:(UIButton *)sender {
+    [ShareSDK getUserInfo:SSDKPlatformTypeQQ
+           onStateChanged:^(SSDKResponseState state, SSDKUser *user, NSError *error)
+     {
+         if (state == SSDKResponseStateSuccess)
+         {
+             
+             NSLog(@"uid=%@",user.uid);
+             NSLog(@"%@",user.credential);
+             NSLog(@"token=%@",user.credential.token);
+             NSLog(@"nickname=%@",user.nickname);
+         
+             SGViewController *svc = [[SGViewController alloc]init];
+             
+             [self presentViewController:svc animated:YES completion:nil];
+         }
+         
+         else
+         {
+             NSLog(@"%@",error);
+         }
+         
+     }];
 }
 
 #pragma mark 新浪登录响应事件
 - (IBAction)loginByWeibo:(UIButton *)sender {
+    [ShareSDK getUserInfo:SSDKPlatformTypeSinaWeibo
+           onStateChanged:^(SSDKResponseState state, SSDKUser *user, NSError *error)
+     {
+         if (state == SSDKResponseStateSuccess)
+         {
+             
+             NSLog(@"uid=%@",user.uid);
+             NSLog(@"%@",user.credential);
+             NSLog(@"token=%@",user.credential.token);
+             NSLog(@"nickname=%@",user.nickname);
+             
+             SGViewController *svc = [[SGViewController alloc]init];
+             
+             [self presentViewController:svc animated:YES completion:nil];
+         }
+         
+         else
+         {
+             NSLog(@"%@",error);
+         }
+         
+     }];
 }
 
 #pragma mark 微信登录响应事件
