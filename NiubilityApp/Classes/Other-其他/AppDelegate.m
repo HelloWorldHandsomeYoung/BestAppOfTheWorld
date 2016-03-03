@@ -7,12 +7,10 @@
 //
 
 #import "AppDelegate.h"
-<<<<<<< HEAD
 
-=======
 #import "HomePageController.h"
 #import "SGViewController.h"
->>>>>>> c32055e38cf28881b48a05dbc03139c1dde5cf48
+//>>>>>>> c32055e38cf28881b48a05dbc03139c1dde5cf48
 #import "SGMainViewController.h"
 #import "SGNavigationController.h"
 
@@ -47,10 +45,7 @@
     [self.window makeKeyAndVisible];
     SGNavigationController *nvc = [[SGNavigationController alloc] initWithRootViewController:[[SGMainViewController alloc]init]];
 
-<<<<<<< HEAD
 
-    self.window.rootViewController =nvc;
-=======
     self.window.rootViewController = nvc;
     
 //    [nvc pushViewController:[[SGViewController alloc]init] animated:YES];
@@ -63,7 +58,7 @@
 //    }];
     
     
->>>>>>> c32055e38cf28881b48a05dbc03139c1dde5cf48
+
     return YES;
 }
 #pragma mark - LeanCloud 配置

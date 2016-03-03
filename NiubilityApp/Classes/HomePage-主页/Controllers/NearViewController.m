@@ -7,7 +7,7 @@
 //
 
 #import "NearViewController.h"
-#import "NearViewCell.h"
+//#import "NearViewCell.h"
 #import "NearModels.h"
 
 @interface NearViewController ()
@@ -50,13 +50,13 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NearViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NearCell" forIndexPath:indexPath];
-    NearModels *model = nil;
-    cell.nearModel = model;
-
-    return cell;
-}
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NearViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NearCell" forIndexPath:indexPath];
+//    NearModels *model = nil;
+//    cell.nearModel = model;
+//
+//    return cell;
+//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 86;
