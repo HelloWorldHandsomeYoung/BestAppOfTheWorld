@@ -109,6 +109,7 @@
 {
     //热门
     HotViewController *hot = [[HotViewController alloc]init];
+    hot.tableView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
     [self addChildViewController:hot];
     //附近
     NearViewController *near = [[NearViewController alloc]init];

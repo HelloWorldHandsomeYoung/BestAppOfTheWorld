@@ -10,6 +10,12 @@
 #define PrefixHeader_pch
 
 #import "UIView+SGExtension.h"
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+
+//LeanCloud
+#import <AVOSCloud/AVOSCloud.h>
+#import <AVOSCloudIM/AVOSCloudIM.h>
 
 #define SGScreenW [UIScreen mainScreen].bounds.size.width
 #define SGScreenH [UIScreen mainScreen].bounds.size.height

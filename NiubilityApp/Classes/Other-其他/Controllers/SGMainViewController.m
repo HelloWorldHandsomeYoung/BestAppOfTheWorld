@@ -9,10 +9,12 @@
 #import "SGMainViewController.h"
 #import "SGLoginViewController.h"
 #import "SGRegisterViewController.h"
+#import "SGViewController.h"
 
-@interface SGMainViewController ()
+@interface SGMainViewController ()<UIGestureRecognizerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIImageView *BackGroundImg;
 
 @end
 
@@ -22,12 +24,21 @@
     [super viewDidLoad];
 
 
-    
     [self changeButtonCornerRadius];
+    
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(pushAction:)];
+    gesture.delegate = self;
+    gesture.numberOfTapsRequired = 1;
+    gesture.numberOfTouchesRequired = 1;
+    self.BackGroundImg.userInteractionEnabled = YES;
+    [self.BackGroundImg addGestureRecognizer:gesture];
     
     // Do any additional setup after loading the view from its nib.
 }
-
+- (void)pushAction:(UITapGestureRecognizer *)sender
+{ 
+    [self.navigationController pushViewController:[[SGViewController alloc]init] animated:YES];
+}
 - (void)viewWillAppear:(BOOL)animated {
     self.navigationController.navigationBarHidden = YES;
 }

@@ -1,7 +1,6 @@
-platform :<#ios#>, "<#6.0#>"
+platform :ios, "9.0"
 
-pod "<#PodName#>"
+pod 'AVOSCloud'
+pod 'AVOSCloudIM'
+pod 'AVOSCloudCrashReporting'
 
-target :<#TargetName#>Tests, :exclusive => true do
-  # pod 'Kiwi'
-end

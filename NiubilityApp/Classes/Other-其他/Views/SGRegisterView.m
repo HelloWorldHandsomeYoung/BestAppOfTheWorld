@@ -41,9 +41,10 @@
     
     [self addSubview:self.country];
     
+    CGSize sizeB = CGSizeMake(60, 45);
     self.phoneNum = [[UITextField alloc]initWithFrame:CGRectMake(0, 115, self.width, 45)];
     UILabel *leftViewP = [[UILabel alloc]init];
-    leftViewP.size = CGSizeMake(60, 45);
+    leftViewP.size = sizeB;
     leftViewP.text = @"+86";
     leftViewP.textColor = [UIColor grayColor];
     self.phoneNum.leftView = leftViewP;
@@ -52,6 +53,17 @@
     self.phoneNum.backgroundColor = [UIColor whiteColor];
     self.phoneNum.keyboardType = UIKeyboardTypeNumberPad;
     [self addSubview:self.phoneNum];
+    
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    rightButton.size = sizeB;
+    [rightButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    rightButton.titleLabel.font = [UIFont systemFontOfSize:13];
+    [rightButton setTitle:@"发送" forState:UIControlStateNormal];
+    rightButton.tag = 60;
+    self.rightButton = rightButton;
+    self.phoneNum.rightView = rightButton;
+    self.phoneNum.rightViewMode = UITextFieldViewModeAlways;
+    
     
     self.button = [UIButton buttonWithType:UIButtonTypeSystem];
     self.button.frame = CGRectMake(0, 0, 230, 45);

@@ -13,6 +13,8 @@
 @property(nonatomic,strong)UITextField *country;
 @property(nonatomic,strong)UITextField *phoneNum;
 @property(nonatomic,strong)UIButton *button;
+/* 发送按钮 */
+@property (nonatomic, strong)UIButton *rightButton;
 
 
 @end
