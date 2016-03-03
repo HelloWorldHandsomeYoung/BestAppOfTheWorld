@@ -55,7 +55,7 @@
     self.indicatorView = indicatorView;
     
     //内部的子标签
-    NSArray *titles = @[@"附近", @"热门", @"最新"];
+    NSArray *titles = @[@"热门", @"附近", @"最新"];
     NSInteger count = 3;
     CGFloat width = titlesView.width / count;
     CGFloat height = titlesView.height;

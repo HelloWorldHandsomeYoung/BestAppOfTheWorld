@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class NearModels;
 @interface NearViewCell : UITableViewCell
-
+@property (nonatomic, strong) NearModels *nearModel;
 @end

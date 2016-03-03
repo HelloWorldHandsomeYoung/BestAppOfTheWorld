@@ -22,7 +22,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.sgrv.phoneNum.delegate = self;
     
     [self.sgrv.button addTarget:self action:@selector(registerAction:) forControlEvents:UIControlEventTouchUpInside];

@@ -13,4 +13,10 @@
 
 #define SGScreenW [UIScreen mainScreen].bounds.size.width
 #define SGScreenH [UIScreen mainScreen].bounds.size.height
+
+#pragma mark - tableViewCell 的Identifier
+#define hotCell @"HotCell"
+#define homeCell @"HomeCell"
+#define nearCell @"NearCell"
+
 #endif /* PrefixHeader_pch */
