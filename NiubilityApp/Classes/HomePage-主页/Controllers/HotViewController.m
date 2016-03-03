@@ -7,6 +7,8 @@
 //
 
 #import "HotViewController.h"
+#import "HotViewCell.h"
+#import "HotModels.h"
 
 @interface HotViewController ()
 
@@ -18,6 +20,15 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor redColor];
+
+    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
+
+    [self.tableView registerNib:[UINib nibWithNibName:@"HotViewCell" bundle:nil] forCellReuseIdentifier:hotCell];
+
+//    self.tableView.rowHeight=UITableViewAutomaticDimension;//这句表示cell的高度自适应
+
+    self.tableView.estimatedRowHeight=10.0f;//这个高度写xib视图的最小高度，也即label只有一行时的xib视图高度
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -35,18 +46,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+    return 2;
 }
 
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-//    
-//
-//    
-//    return cell;
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    HotViewCell *cell = [tableView dequeueReusableCellWithIdentifier:hotCell forIndexPath:indexPath];
+    HotModels *model = nil;
+    cell.model = model;
+    
+   
+    return cell;
+}
 
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+//}
 
 /*
 // Override to support conditional editing of the table view.

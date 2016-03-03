@@ -7,11 +7,24 @@
 //
 
 #import "NearViewCell.h"
+#import "NearModels.h"
+
+@interface NearViewCell ()
+@property (weak, nonatomic) IBOutlet UIImageView *headerPic;
+
+@end
 
 @implementation NearViewCell
 
 - (void)awakeFromNib {
     // Initialization code
+}
+
+- (void)setNearModel:(NearModels *)nearModel {
+    _nearModel = nearModel;
+    self.headerPic.masksToBoundsWH = YES;
+    self.headerPic.cornerRadiusWH = 10;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

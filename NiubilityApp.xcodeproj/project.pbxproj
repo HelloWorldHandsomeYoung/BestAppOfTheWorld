@@ -57,7 +57,14 @@
 		76B3F1431C857DD000683D78 /* NearViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1411C857DD000683D78 /* NearViewCell.m */; };
 		76B3F1441C857DD000683D78 /* NearViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B3F1421C857DD000683D78 /* NearViewCell.xib */; };
 		76B3F1471C857ED200683D78 /* HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F1461C857ED200683D78 /* HotViewController.m */; };
+<<<<<<< HEAD
+		A5CC9E961C87CB5D002A1CA6 /* HotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CC9E941C87CB5D002A1CA6 /* HotViewCell.m */; };
+		A5CC9E971C87CB5D002A1CA6 /* HotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5CC9E951C87CB5D002A1CA6 /* HotViewCell.xib */; };
+		A5CC9E9A1C87E136002A1CA6 /* HotModels.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CC9E991C87E136002A1CA6 /* HotModels.m */; };
+		A5CC9E9D1C880BF7002A1CA6 /* NearModels.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CC9E9C1C880BF7002A1CA6 /* NearModels.m */; };
+=======
 		7BD15FDA23FC7A975A37CBF1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 580EF26C0CE8403748F82C64 /* libPods.a */; };
+>>>>>>> c32055e38cf28881b48a05dbc03139c1dde5cf48
 		A5D94A361C858A3A0008D595 /* SGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D94A341C858A3A0008D595 /* SGMainViewController.m */; };
 		A5D94A371C858A3A0008D595 /* SGMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D94A351C858A3A0008D595 /* SGMainViewController.xib */; };
 		A5D94A3B1C8595710008D595 /* SGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D94A391C8595710008D595 /* SGLoginViewController.m */; };
@@ -153,6 +160,13 @@
 		76B3F1421C857DD000683D78 /* NearViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearViewCell.xib; sourceTree = "<group>"; };
 		76B3F1451C857ED200683D78 /* HotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewController.h; sourceTree = "<group>"; };
 		76B3F1461C857ED200683D78 /* HotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewController.m; sourceTree = "<group>"; };
+		A5CC9E931C87CB5D002A1CA6 /* HotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewCell.h; sourceTree = "<group>"; };
+		A5CC9E941C87CB5D002A1CA6 /* HotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewCell.m; sourceTree = "<group>"; };
+		A5CC9E951C87CB5D002A1CA6 /* HotViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotViewCell.xib; sourceTree = "<group>"; };
+		A5CC9E981C87E136002A1CA6 /* HotModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotModels.h; sourceTree = "<group>"; };
+		A5CC9E991C87E136002A1CA6 /* HotModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotModels.m; sourceTree = "<group>"; };
+		A5CC9E9B1C880BF7002A1CA6 /* NearModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearModels.h; sourceTree = "<group>"; };
+		A5CC9E9C1C880BF7002A1CA6 /* NearModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearModels.m; sourceTree = "<group>"; };
 		A5D94A331C858A3A0008D595 /* SGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMainViewController.h; sourceTree = "<group>"; };
 		A5D94A341C858A3A0008D595 /* SGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMainViewController.m; sourceTree = "<group>"; };
 		A5D94A351C858A3A0008D595 /* SGMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGMainViewController.xib; sourceTree = "<group>"; };
@@ -385,6 +399,10 @@
 			children = (
 				76B3F1291C8569CF00683D78 /* HomePageModels.h */,
 				76B3F12A1C8569CF00683D78 /* HomePageModels.m */,
+				A5CC9E981C87E136002A1CA6 /* HotModels.h */,
+				A5CC9E991C87E136002A1CA6 /* HotModels.m */,
+				A5CC9E9B1C880BF7002A1CA6 /* NearModels.h */,
+				A5CC9E9C1C880BF7002A1CA6 /* NearModels.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -398,6 +416,9 @@
 				76B3F1401C857DD000683D78 /* NearViewCell.h */,
 				76B3F1411C857DD000683D78 /* NearViewCell.m */,
 				76B3F1421C857DD000683D78 /* NearViewCell.xib */,
+				A5CC9E931C87CB5D002A1CA6 /* HotViewCell.h */,
+				A5CC9E941C87CB5D002A1CA6 /* HotViewCell.m */,
+				A5CC9E951C87CB5D002A1CA6 /* HotViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -573,8 +594,12 @@
 				76B3F1281C8543AC00683D78 /* HomePageViewCell.xib in Resources */,
 				A5D94A3C1C8595710008D595 /* SGLoginViewController.xib in Resources */,
 				76B3F0E81C84222400683D78 /* Main.storyboard in Resources */,
+<<<<<<< HEAD
+				A5CC9E971C87CB5D002A1CA6 /* HotViewCell.xib in Resources */,
+=======
 				760FDE5C1C86D20D007AC61B /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				760FDE601C86D20D007AC61B /* read_me.txt in Resources */,
+>>>>>>> c32055e38cf28881b48a05dbc03139c1dde5cf48
 				A5D94A371C858A3A0008D595 /* SGMainViewController.xib in Resources */,
 				760FDE591C86D20D007AC61B /* ShareSDKUI.bundle in Resources */,
 			);
@@ -648,11 +673,14 @@
 				76B3F1131C852EA300683D78 /* SGNavigationController.m in Sources */,
 				76B3F1231C85438D00683D78 /* MeController.m in Sources */,
 				76B3F12B1C8569CF00683D78 /* HomePageModels.m in Sources */,
+				A5CC9E961C87CB5D002A1CA6 /* HotViewCell.m in Sources */,
 				76B3F10C1C852A8B00683D78 /* AppDelegate.m in Sources */,
 				76B3F1311C8569ED00683D78 /* MeViewCell.m in Sources */,
 				76B3F1431C857DD000683D78 /* NearViewCell.m in Sources */,
 				76B3F1101C852B3400683D78 /* SGViewController.m in Sources */,
+				A5CC9E9D1C880BF7002A1CA6 /* NearModels.m in Sources */,
 				76B3F1161C852F9500683D78 /* UIView+SGExtension.m in Sources */,
+				A5CC9E9A1C87E136002A1CA6 /* HotModels.m in Sources */,
 				76B3F13F1C857D8F00683D78 /* NewViewController.m in Sources */,
 				76B3F1271C8543AC00683D78 /* HomePageViewCell.m in Sources */,
 				76B3F0DF1C84222400683D78 /* main.m in Sources */,
