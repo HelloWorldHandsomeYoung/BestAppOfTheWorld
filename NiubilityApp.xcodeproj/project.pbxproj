@@ -36,6 +36,7 @@
 		760FDE651C86D234007AC61B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760FDE641C86D234007AC61B /* ImageIO.framework */; };
 		7655685C1C89644100DA5F66 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7655685A1C89644100DA5F66 /* ChatViewController.m */; };
 		7655685D1C89644100DA5F66 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7655685B1C89644100DA5F66 /* ChatViewController.xib */; };
+		7655685F1C89759800DA5F66 /* NearViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7655685E1C89759800DA5F66 /* NearViewCell.xib */; };
 		76841A9C1C8829420053B4A9 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76841A9B1C8829420053B4A9 /* UserManager.m */; };
 		76B3F0DF1C84222400683D78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F0DE1C84222400683D78 /* main.m */; };
 		76B3F0E81C84222400683D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B3F0E61C84222400683D78 /* Main.storyboard */; };
@@ -117,6 +118,7 @@
 		765568591C89644100DA5F66 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		7655685A1C89644100DA5F66 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		7655685B1C89644100DA5F66 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		7655685E1C89759800DA5F66 /* NearViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearViewCell.xib; sourceTree = "<group>"; };
 		76841A9A1C8829420053B4A9 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
 		76841A9B1C8829420053B4A9 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
 		76B3F0DA1C84222400683D78 /* NiubilityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiubilityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -410,6 +412,7 @@
 		76B3F0FF1C852A8B00683D78 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7655685E1C89759800DA5F66 /* NearViewCell.xib */,
 				76B3F1241C8543AC00683D78 /* HomePageViewCell.h */,
 				76B3F1251C8543AC00683D78 /* HomePageViewCell.m */,
 				76B3F1261C8543AC00683D78 /* HomePageViewCell.xib */,
@@ -593,6 +596,7 @@
 				76B3F0E81C84222400683D78 /* Main.storyboard in Resources */,
 				A5CC9E971C87CB5D002A1CA6 /* HotViewCell.xib in Resources */,
 				760FDE5C1C86D20D007AC61B /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				7655685F1C89759800DA5F66 /* NearViewCell.xib in Resources */,
 				760FDE601C86D20D007AC61B /* read_me.txt in Resources */,
 				A5D94A371C858A3A0008D595 /* SGMainViewController.xib in Resources */,
 				760FDE591C86D20D007AC61B /* ShareSDKUI.bundle in Resources */,
