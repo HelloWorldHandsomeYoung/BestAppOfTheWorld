@@ -25,6 +25,7 @@
 #import "WeiboSDK.h"
 
 #import "UserManager.h"
+#import "ChatViewController.h"
 
 
 @interface AppDelegate ()
@@ -43,7 +44,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    SGNavigationController *nvc = [[SGNavigationController alloc] initWithRootViewController:[[SGMainViewController alloc]init]];
+    SGNavigationController *nvc = [[SGNavigationController alloc] initWithRootViewController:[[ChatViewController alloc]init]];
 
 
     self.window.rootViewController = nvc;

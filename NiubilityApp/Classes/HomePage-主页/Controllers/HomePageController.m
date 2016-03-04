@@ -36,12 +36,16 @@
     
     //设置消息代理
     [UserManager shareInstance].client.delegate = self;
+    //打开client通道
+    [[UserManager shareInstance].client openWithCallback:^(BOOL succeeded, NSError *error) {
+        
+    }];
 }
 #pragma mark - AVIMClientDelegate
-- (void)conversation:(AVIMConversation *)conversation didReceiveTypedMessage:(AVIMTypedMessage *)message
-{
-    NSLog(@"%@", message.text);
-}
+//- (void)conversation:(AVIMConversation *)conversation didReceiveTypedMessage:(AVIMTypedMessage *)message
+//{
+//    NSLog(@"%@", message.text);
+//}
 #pragma mark - 设置Navigation
 - (void)setupNavigation
 {

@@ -49,6 +49,10 @@ static UserManager *manager = nil;
 - (void)startClient
 {
     self.client = [[AVIMClient alloc]initWithClientId:self.user[@"nickName"]];
+    //打开client通道
+    [self.client openWithCallback:^(BOOL succeeded, NSError *error) {
+        
+    }];
 }
 //发送消息
 - (void)sendMessageTo:(NSString *)nickName Message:(NSString *)message

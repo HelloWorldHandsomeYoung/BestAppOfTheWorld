@@ -34,6 +34,8 @@
 		760FDE621C86D20D007AC61B /* ShareSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 760FDE551C86D20D007AC61B /* ShareSDK.bundle */; };
 		760FDE631C86D20D007AC61B /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760FDE561C86D20D007AC61B /* ShareSDKConnector.framework */; };
 		760FDE651C86D234007AC61B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760FDE641C86D234007AC61B /* ImageIO.framework */; };
+		7655685C1C89644100DA5F66 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7655685A1C89644100DA5F66 /* ChatViewController.m */; };
+		7655685D1C89644100DA5F66 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7655685B1C89644100DA5F66 /* ChatViewController.xib */; };
 		76841A9C1C8829420053B4A9 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76841A9B1C8829420053B4A9 /* UserManager.m */; };
 		76B3F0DF1C84222400683D78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F0DE1C84222400683D78 /* main.m */; };
 		76B3F0E81C84222400683D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B3F0E61C84222400683D78 /* Main.storyboard */; };
@@ -114,6 +116,9 @@
 		760FDE551C86D20D007AC61B /* ShareSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDK.bundle; sourceTree = "<group>"; };
 		760FDE561C86D20D007AC61B /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
 		760FDE641C86D234007AC61B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		765568591C89644100DA5F66 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		7655685A1C89644100DA5F66 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		7655685B1C89644100DA5F66 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		76841A9A1C8829420053B4A9 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
 		76841A9B1C8829420053B4A9 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
 		76B3F0DA1C84222400683D78 /* NiubilityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiubilityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -387,6 +392,9 @@
 				76B3F13B1C857D7A00683D78 /* NearViewController.m */,
 				76B3F13D1C857D8F00683D78 /* NewViewController.h */,
 				76B3F13E1C857D8F00683D78 /* NewViewController.m */,
+				765568591C89644100DA5F66 /* ChatViewController.h */,
+				7655685A1C89644100DA5F66 /* ChatViewController.m */,
+				7655685B1C89644100DA5F66 /* ChatViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -585,6 +593,7 @@
 			files = (
 				76B3F0ED1C84222400683D78 /* LaunchScreen.storyboard in Resources */,
 				760FDE621C86D20D007AC61B /* ShareSDK.bundle in Resources */,
+				7655685D1C89644100DA5F66 /* ChatViewController.xib in Resources */,
 				76B3F0EA1C84222400683D78 /* Assets.xcassets in Resources */,
 				760FDE5E1C86D20D007AC61B /* WeiboSDK.bundle in Resources */,
 				76B3F1281C8543AC00683D78 /* HomePageViewCell.xib in Resources */,
@@ -654,6 +663,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7655685C1C89644100DA5F66 /* ChatViewController.m in Sources */,
 				76B3F13C1C857D7A00683D78 /* NearViewController.m in Sources */,
 				76B3F11D1C8540E300683D78 /* SGTabBar.m in Sources */,
 				76B3F1471C857ED200683D78 /* HotViewController.m in Sources */,
