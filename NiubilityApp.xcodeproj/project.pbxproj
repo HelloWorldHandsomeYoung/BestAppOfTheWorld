@@ -60,8 +60,6 @@
 		A5CC9E971C87CB5D002A1CA6 /* HotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5CC9E951C87CB5D002A1CA6 /* HotViewCell.xib */; };
 		A5CC9E9A1C87E136002A1CA6 /* HotModels.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CC9E991C87E136002A1CA6 /* HotModels.m */; };
 		A5CC9E9D1C880BF7002A1CA6 /* NearModels.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CC9E9C1C880BF7002A1CA6 /* NearModels.m */; };
-		A5CC9ECA1C88824F002A1CA6 /* NearViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CC9EC81C88824F002A1CA6 /* NearViewCell.m */; };
-		A5CC9ECB1C88824F002A1CA6 /* NearViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5CC9EC91C88824F002A1CA6 /* NearViewCell.xib */; };
 		A5D94A361C858A3A0008D595 /* SGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D94A341C858A3A0008D595 /* SGMainViewController.m */; };
 		A5D94A371C858A3A0008D595 /* SGMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D94A351C858A3A0008D595 /* SGMainViewController.xib */; };
 		A5D94A3B1C8595710008D595 /* SGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D94A391C8595710008D595 /* SGLoginViewController.m */; };
@@ -161,9 +159,6 @@
 		A5CC9E991C87E136002A1CA6 /* HotModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotModels.m; sourceTree = "<group>"; };
 		A5CC9E9B1C880BF7002A1CA6 /* NearModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearModels.h; sourceTree = "<group>"; };
 		A5CC9E9C1C880BF7002A1CA6 /* NearModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearModels.m; sourceTree = "<group>"; };
-		A5CC9EC71C88824F002A1CA6 /* NearViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewCell.h; sourceTree = "<group>"; };
-		A5CC9EC81C88824F002A1CA6 /* NearViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewCell.m; sourceTree = "<group>"; };
-		A5CC9EC91C88824F002A1CA6 /* NearViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearViewCell.xib; sourceTree = "<group>"; };
 		A5D94A331C858A3A0008D595 /* SGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMainViewController.h; sourceTree = "<group>"; };
 		A5D94A341C858A3A0008D595 /* SGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMainViewController.m; sourceTree = "<group>"; };
 		A5D94A351C858A3A0008D595 /* SGMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGMainViewController.xib; sourceTree = "<group>"; };
@@ -411,9 +406,6 @@
 				76B3F1251C8543AC00683D78 /* HomePageViewCell.m */,
 				76B3F1261C8543AC00683D78 /* HomePageViewCell.xib */,
 				A5CC9E931C87CB5D002A1CA6 /* HotViewCell.h */,
-				A5CC9EC71C88824F002A1CA6 /* NearViewCell.h */,
-				A5CC9EC81C88824F002A1CA6 /* NearViewCell.m */,
-				A5CC9EC91C88824F002A1CA6 /* NearViewCell.xib */,
 				A5CC9E941C87CB5D002A1CA6 /* HotViewCell.m */,
 				A5CC9E951C87CB5D002A1CA6 /* HotViewCell.xib */,
 			);
@@ -593,7 +585,6 @@
 				A5CC9E971C87CB5D002A1CA6 /* HotViewCell.xib in Resources */,
 				760FDE5C1C86D20D007AC61B /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				760FDE601C86D20D007AC61B /* read_me.txt in Resources */,
-				A5CC9ECB1C88824F002A1CA6 /* NearViewCell.xib in Resources */,
 				A5D94A371C858A3A0008D595 /* SGMainViewController.xib in Resources */,
 				760FDE591C86D20D007AC61B /* ShareSDKUI.bundle in Resources */,
 			);
@@ -655,7 +646,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				76B3F13C1C857D7A00683D78 /* NearViewController.m in Sources */,
-				A5CC9ECA1C88824F002A1CA6 /* NearViewCell.m in Sources */,
 				76B3F11D1C8540E300683D78 /* SGTabBar.m in Sources */,
 				76B3F1471C857ED200683D78 /* HotViewController.m in Sources */,
 				76B3F10D1C852A8B00683D78 /* ViewController.m in Sources */,

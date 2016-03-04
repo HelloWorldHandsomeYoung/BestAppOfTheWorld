@@ -10,6 +10,7 @@
 
 #import "HomePageController.h"
 #import "SGViewController.h"
+//>>>>>>> c32055e38cf28881b48a05dbc03139c1dde5cf48
 #import "SGMainViewController.h"
 #import "SGNavigationController.h"
 
@@ -45,8 +46,8 @@
     SGNavigationController *nvc = [[SGNavigationController alloc] initWithRootViewController:[[SGMainViewController alloc]init]];
 
 
-    self.window.rootViewController =nvc;
     self.window.rootViewController = nvc;
+    
     
 //    [nvc pushViewController:[[SGViewController alloc]init] animated:YES];
     
