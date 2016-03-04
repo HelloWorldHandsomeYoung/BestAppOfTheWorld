@@ -92,7 +92,6 @@ static NSString *cellID = @"chatID";
         [conversation sendMessage:reply callback:^(BOOL succeeded, NSError *error) {
             if (succeeded) {
                 NSLog(@"回复成功！");
-                
             }
             NSLog(@"%@", error);
         }];
