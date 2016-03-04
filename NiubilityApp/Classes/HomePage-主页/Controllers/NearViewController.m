@@ -7,7 +7,7 @@
 //
 
 #import "NearViewController.h"
-//#import "NearViewCell.h"
+#import "NearTableViewCell.h"
 #import "NearModels.h"
 
 @interface NearViewController ()
@@ -23,7 +23,7 @@
 
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
 
-//    [self.tableView registerNib:[UINib nibWithNibName:@"NearViewCell" bundle:nil] forCellReuseIdentifier:@"NearCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"NearTableViewCell" bundle:nil] forCellReuseIdentifier:nearCell];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -44,22 +44,23 @@
 //    return 0;
 //}
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return 10;
-//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//#warning Incomplete implementation, return the number of rows
+    return 10;
+}
 
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NearViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NearCell" forIndexPath:indexPath];
-//    NearModels *model = nil;
-//    cell.nearModel = model;
-//
-//    return cell;
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NearTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:nearCell forIndexPath:indexPath];
+    NearModels *model = nil;
+    cell.nearModel = model;
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return 86;
-//}
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 86;
+}
 
 
 /*
