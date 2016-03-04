@@ -44,4 +44,24 @@ static UserManager *manager = nil;
     
     return self.user;
 }
+
+//开启AVIMConversation
+- (void)startClient
+{
+    self.client = [[AVIMClient alloc]initWithClientId:self.user[@"nickName"]];
+}
+//发送消息
+- (void)sendMessageTo:(NSString *)nickName Message:(NSString *)message
+{
+    //打开会话
+    [[UserManager shareInstance].client openWithCallback:^(BOOL succeeded, NSError *error) {
+        [self.client createConversationWithName:nickName clientIds:@[nickName] callback:^(AVIMConversation *conversation, NSError *error) {
+            [conversation sendMessage:[AVIMTextMessage messageWithText:message attributes:nil] callback:^(BOOL succeeded, NSError *error) {
+                if (succeeded) {
+                    NSLog(@"1");
+                }
+            }];
+        }];
+    }];
+}
 @end

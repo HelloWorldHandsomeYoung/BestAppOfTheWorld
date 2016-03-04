@@ -11,6 +11,8 @@
 @interface UserManager : NSObject
 /* User */
 @property (nonatomic, strong)AVObject *user;
+/* Client */
+@property (nonatomic, strong)AVIMClient *client;
 //单例
 + (instancetype)shareInstance;
 //用户注册
@@ -21,4 +23,9 @@
 //用户登录（查询）
 - (AVObject *)userLoginWithUserName:(NSString *)userName
                            PassWord:(NSString *)passWord;
+
+//开启AVIMConversation
+- (void)startClient;
+//发送消息
+- (void)sendMessageTo:(NSString *)nickName Message:(NSString *)message;
 @end

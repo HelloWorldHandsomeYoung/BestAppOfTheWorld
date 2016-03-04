@@ -53,6 +53,7 @@
 - (IBAction)loginAction:(UIButton *)sender {
     AVObject *user = [[UserManager shareInstance]userLoginWithUserName:self.phoneNumField.text PassWord:self.passwardField.text];
     if (user != NULL) {
+        [[UserManager shareInstance]startClient];
         [self.navigationController presentViewController:[[SGViewController alloc]init] animated:YES completion:nil];
     }else
     {
@@ -70,6 +71,10 @@
         [UIView animateWithDuration:1 animations:^{
             view.alpha = 0;
         }];;
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [view removeFromSuperview];
+        });
     }
 }
 

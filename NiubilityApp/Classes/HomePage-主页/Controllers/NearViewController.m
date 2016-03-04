@@ -23,7 +23,7 @@
 
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
 
-    [self.tableView registerNib:[UINib nibWithNibName:@"NearViewCell" bundle:nil] forCellReuseIdentifier:@"NearCell"];
+//    [self.tableView registerNib:[UINib nibWithNibName:@"NearViewCell" bundle:nil] forCellReuseIdentifier:@"NearCell"];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -44,10 +44,9 @@
 //    return 0;
 //}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of rows
-    return 10;
-}
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return 10;
+//}
 
 
 //- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -58,9 +57,9 @@
 //    return cell;
 //}
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 86;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return 86;
+//}
 
 
 /*

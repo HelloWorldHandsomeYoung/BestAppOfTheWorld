@@ -10,8 +10,9 @@
 #import "HotViewController.h"
 #import "NewViewController.h"
 #import "NearViewController.h"
+#import "UserManager.h"
 
-@interface HomePageController ()<UIScrollViewDelegate>
+@interface HomePageController ()<UIScrollViewDelegate, AVIMClientDelegate>
 /* 标签栏底部的红色指示器 */
 @property (nonatomic, weak)UIView  *indicatorView;
 /* 当前选中的按钮  */
@@ -32,6 +33,14 @@
     [self setupChildVcs];
     //底部的scrollView
     [self setupContentView];
+    
+    //设置消息代理
+    [UserManager shareInstance].client.delegate = self;
+}
+#pragma mark - AVIMClientDelegate
+- (void)conversation:(AVIMConversation *)conversation didReceiveTypedMessage:(AVIMTypedMessage *)message
+{
+    NSLog(@"%@", message.text);
 }
 #pragma mark - 设置Navigation
 - (void)setupNavigation

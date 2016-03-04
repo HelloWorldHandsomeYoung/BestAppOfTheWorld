@@ -51,7 +51,7 @@
     
 //    [nvc pushViewController:[[SGViewController alloc]init] animated:YES];
     
-//    AVObject * user = [[UserManager shareInstance]userRegisterWithUserName:@"1" PassWord:@"1" Gender:@"man" NickName:@"a"];
+//    AVObject * user = [[UserManager shareInstance]userRegisterWithUserName:@"3" PassWord:@"2" Gender:@"man" NickName:@"b"];
 //    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
 //        if (succeeded) {
 //            NSLog(@"1");
