@@ -48,6 +48,7 @@
 
     self.window.rootViewController = nvc;
     
+    
 //    [nvc pushViewController:[[SGViewController alloc]init] animated:YES];
     
 //    AVObject * user = [[UserManager shareInstance]userRegisterWithUserName:@"1" PassWord:@"1" Gender:@"man" NickName:@"a"];
