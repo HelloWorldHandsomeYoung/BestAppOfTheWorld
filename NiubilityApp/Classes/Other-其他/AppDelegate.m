@@ -10,7 +10,7 @@
 
 #import "HomePageController.h"
 #import "SGViewController.h"
-//>>>>>>> c32055e38cf28881b48a05dbc03139c1dde5cf48
+
 #import "SGMainViewController.h"
 #import "SGNavigationController.h"
 
